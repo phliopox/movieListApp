@@ -9,6 +9,12 @@ android {
 }
 
 dependencies {
+    implementation(projects.common)
+    implementation(projects.design)
+    implementation(projects.components)
+    implementation(projects.dataResource)
+    implementation(projects.presentation)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 
