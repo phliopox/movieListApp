@@ -33,7 +33,6 @@ android {
         jvmTarget = Config.jvmTarget
     }
     buildFeatures {
-        //  compose = true
         dataBinding = true
     }
 }

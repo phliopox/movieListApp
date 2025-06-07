@@ -1,5 +1,7 @@
 plugins {
-   id("module.android")
+    id("module.android")
+    id("kotlin-parcelize")
+
 }
 
 android {

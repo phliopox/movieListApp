@@ -26,6 +26,8 @@ dependencies {
 
     implementation(libs.glide)
     kapt(libs.glide.compiler)
+    implementation("kr.co.prnd:readmore-textview:1.0.0")
+
     /*  implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
