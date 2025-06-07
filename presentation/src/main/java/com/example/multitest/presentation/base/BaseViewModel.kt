@@ -1,12 +1,14 @@
 package com.example.multitest.presentation.base
 
 import androidx.lifecycle.ViewModel
+import com.example.multitest.common.util.logw
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
+import javax.sql.DataSource
 import kotlin.math.max
 
 abstract class BaseViewModel<VE : ViewEvent> : ViewModel() {
@@ -50,8 +52,10 @@ abstract class BaseViewModel<VE : ViewEvent> : ViewModel() {
     }
     fun handleError(throwable: Throwable?,tag:String = DEFAULT_LOADING_TAG){
         hideLoading(tag)
-        //로그 유틸 추가 예정
+        logw(throwable.toString())
+        //todo handle throwable
     }
+
 
     companion object {
         const val DEFAULT_LOADING_TAG = "DEFAULT_LOADING_TAG"
