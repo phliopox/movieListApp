@@ -1,7 +1,7 @@
 package com.example.multitest.presentation.model
 
 import android.os.Parcelable
-import com.example.multitest.mm.domain.SummaryMovie
+import com.example.multitest.mm.domain.model.SummaryMovie
 import java.util.Date
 import kotlinx.parcelize.Parcelize
 

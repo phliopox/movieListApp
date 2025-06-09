@@ -1,4 +1,4 @@
-package com.example.multitest.mm.domain
+package com.example.multitest.mm.domain.model
 
 import java.util.Date
 
