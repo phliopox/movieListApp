@@ -4,12 +4,25 @@ object ApplicationId {
     val id = "com.example.multitest"
 }
 
+/*
 object Modules {
     val app = ":app"
 
+    val design = ":design"
+    val device = ":device"
     val ui = ":ui"
+
+    val presentation = ":presentation"
     val domain = ":domain"
+    val data = ":data"
+    val remote = ":remote"
+    val local = ":local"
+
+    val dataResource = "::data-resource"
+    val common = ":common"
+    val component = ":component"
 }
+*/
 
 object Releases {
     val versionCode = 1
